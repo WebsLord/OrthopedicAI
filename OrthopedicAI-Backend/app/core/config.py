@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     
     # Database Settings
     # Veritabanı Ayarları
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./orthopedic.db")
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./Database/orthopedic.db")
 
     # AI Model Settings
     # Yapay Zeka Model Ayarları
