@@ -1,3 +1,18 @@
-*.
+# Python compilation archives
+__pycache__/
+*.py[cod]
 
+# Virtual environment (Heavy files)
+venv/
+env/
+
+# Environment variables (Secrets!)
 .env
+.env.local
+
+# Database (SQLite)
+*.db
+*.sqlite3
+
+# OS specific
+.DS_Store
