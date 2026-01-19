@@ -1,0 +1,21 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "auth": {
+    "login_title": "Welcome Back",
+    "register_title": "Create Account",
+    "email_placeholder": "Enter your email",
+    "password_placeholder": "Enter your password",
+    "login_button": "Login",
+    "register_button": "Register",
+    "no_account": "Don't have an account? Sign up"
+  },
+  "home": {
+    "welcome": "Welcome to OrthopedicAI"
+  }
+}

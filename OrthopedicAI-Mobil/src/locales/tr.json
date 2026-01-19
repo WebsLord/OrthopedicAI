@@ -1,0 +1,21 @@
+{
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "success": "Başarılı",
+    "cancel": "İptal",
+    "save": "Kaydet"
+  },
+  "auth": {
+    "login_title": "Tekrar Hoşgeldiniz",
+    "register_title": "Hesap Oluştur",
+    "email_placeholder": "E-postanızı girin",
+    "password_placeholder": "Şifrenizi girin",
+    "login_button": "Giriş Yap",
+    "register_button": "Kayıt Ol",
+    "no_account": "Hesabınız yok mu? Kaydolun"
+  },
+  "home": {
+    "welcome": "OrthopedicAI'ye Hoşgeldiniz"
+  }
+}

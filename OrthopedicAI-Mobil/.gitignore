@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production
+dist/
+web-build/
+
+# Testing
+coverage/
+
+# Expo
+.expo/
+expo-env.d.ts
+
+# Environment variables (SECURITY CRITICAL)
+# Ortam değişkenleri (GÜVENLİK İÇİN KRİTİK)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.env.*
+
+# MacOS
+.DS_Store
+
+# Android/IntelliJ
+android/
+*.jks
+*.keystore
+
+# iOS
+ios/
+*.key
+*.mobileprovision
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
