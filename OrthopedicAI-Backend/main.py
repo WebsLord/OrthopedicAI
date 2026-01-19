@@ -2,9 +2,10 @@ from fastapi import FastAPI
 import uvicorn
 from app.core.config import settings
 from app.core.database import engine, Base
-# Import models explicitly so SQLAlchemy detects them
-# Modelleri açıkça içe aktar, böylece SQLAlchemy onları algılar
 from app.models import user 
+# Import the auth router
+# Auth yönlendiricisini içe aktar
+from app.routers import auth
 
 # Create database tables
 # Veritabanı tablolarını oluştur
@@ -14,6 +15,10 @@ app = FastAPI(
     title=settings.PROJECT_NAME,
     openapi_url=f"{settings.API_V1_STR}/openapi.json"
 )
+
+# Include the auth router
+# Auth yönlendiricisini dahil et
+app.include_router(auth.router, prefix=f"{settings.API_V1_STR}/auth", tags=["auth"])
 
 @app.get("/")
 def read_root():

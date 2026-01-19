@@ -22,3 +22,16 @@ class User(UserBase):
 
     class Config:
         from_attributes = True
+
+# --- NEW ADDITIONS / YENİ EKLEMELER ---
+
+# Schema for JWT Token response
+# JWT Token yanıtı için şema
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+# Schema for Token payload
+# Token içeriği için şema
+class TokenData(BaseModel):
+    email: Optional[str] = None
